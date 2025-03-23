@@ -1,0 +1,37 @@
+<div class="title-container">
+    <h1>Find your favourite magic shop</h1>
+    <p>The best online magic shops – all in one place!</p>
+</div>
+
+
+<div class="searchbar-container">
+    <div class="searchbar">
+        <label for="search-bar">Type to search:</label>
+        <div class="input-container">
+            <input type="text" id="search-bar" [formControl]="searchControl" placeholder="Type to search.." class="search-bar" />
+            <span class="search-icon"><i class="fas fa-search" alt="" ></i></span>
+        </div>
+    </div>
+</div>
+
+<div class="shop-error-message">
+    <p>Sorry... your shop could not be found.</p>
+    <p>Request it via the feedback button in the navigation, and I’ll work on adding it!</p>
+</div>
+
+
+<div class="shops-container">
+    @for (shop of filteredShopsList; track shop.id) {
+        <div class="card">
+            <div class="card-left">
+                <h3>{{ shop.name }}</h3>
+                <a [href]="shop.url" target="_blank"> {{ shop.urlName }} </a>
+            </div>
+            <div class="card-right">
+                <a [href]="shop.url" target="_blank">
+                    <i class="fa-solid fa-arrow-up-right-from-square" title="Zur Webseite"></i>
+                </a>
+            </div>
+        </div>
+    }
+</div>

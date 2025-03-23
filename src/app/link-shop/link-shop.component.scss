@@ -1,0 +1,160 @@
+.title-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.title-container h1{
+    font-size: 48px;
+    letter-spacing: 1px;
+}
+
+.title-container p{
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.searchbar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.searchbar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px; 
+}
+
+label {
+    margin-bottom: 8px; 
+    font-weight: bold; 
+}
+
+.input-container {
+    display: flex;
+    align-items: center; 
+    position: relative;
+}
+
+.search-bar {
+    flex: 1; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    font-size: 16px; 
+}
+
+#search-bar{
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 25px;
+    outline: none;
+    transition: border .3s ease;
+}
+
+#search-bar:focus {
+    border-color: #ff6347;
+    box-shadow: 0 0 16px rgba(0, 123, 255, 0.2);
+}
+
+.search-icon{
+    position: absolute;
+    right: 15px;
+    font-size: 18px;
+    color:  #888;
+}
+
+
+.searchbar button{
+    padding: 10px;
+    width: 8rem;
+    border-radius: 25px;
+    background-color: #fff;
+    border: none;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.shop-error-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto; 
+    margin-top: 10vh; 
+}
+
+.shops-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+
+.card{
+    min-height: 80px;
+    background-color: rgb(18, 29, 54);
+    border-radius: 12px;
+    display: flex;
+    color: #fff;
+    margin-bottom: 20px;
+    width: 45%;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.card-left {
+    width: 80%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 16px;
+    padding-top: 16px; 
+    padding-bottom: 16px; 
+    
+}
+
+.card-left h3{
+    font-size: 24px;
+    margin-bottom: 4px;
+    letter-spacing: 1px;
+}
+
+.card-left a{
+    font-size: 16px;
+    margin-bottom: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.card-left a:visited{
+    color: #ff6347; 
+}
+
+.card-right {
+    padding-top: 8px;
+    width: 20%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-right i{
+    font-size: 24px;
+    color: #fff;
+}
+
+.card-right i:hover{
+    color: #ff6347; 
+    transition: ease-in-out .2s;
+}

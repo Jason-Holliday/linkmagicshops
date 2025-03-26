@@ -1,0 +1,43 @@
+:root {
+    --max-width: 1200px;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-color: rgb(18, 29, 54);
+    color: white;
+    padding: 0 20px;
+    max-width: var(--max-width);
+    margin: 0 auto;
+  }
+  
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+  }
+  
+  #logo {
+    height: 50px;
+    width: 50px;
+    margin-right: 5px;
+  }
+  
+  .feedback-button {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .feedback-button:hover {
+    background-color: #af2107;
+  }
+  

@@ -1,1 +1,8 @@
+<app-nav></app-nav>
 <app-link-shop></app-link-shop>
+
+<app-modal></app-modal>
+
+@if(isModalOpen) {
+    <div class="overlay" (click)="closeModal()"></div>
+  }

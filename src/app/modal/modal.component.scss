@@ -1,0 +1,80 @@
+
+.feedback-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 100%; 
+    max-width: 500px; 
+    background: #fff;
+    color: #000;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: auto;
+    z-index: 1001;
+  }
+
+.modal{
+    width: 100%;
+}
+
+.modal h1{
+    margin-bottom: 20px;
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+
+.modal p{
+    margin-bottom: 20px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+label{
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#label-yourFeedback{
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+input, 
+textarea{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
+}
+
+#decline-btn{
+    margin-left: 20px;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}

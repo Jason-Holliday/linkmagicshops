@@ -1,0 +1,20 @@
+@if(isOpen) {
+    <dialog class="feedback-container" [attr.open]="isOpen ? '' : null">
+        <div class="modal" (click)="$event.stopPropagation()">
+            <h1>Feedbackformular</h1>
+
+            <p>Teile mir deine Meinung mit, damit ich die Seite kontinuierlich verbessern kann.</p>
+            <p>Die mit Stern markierten Felder sind Pflichtfelder.</p>
+
+            <form action="">
+                <label id="label-yourFeedback" for="">Dein Feedback: *</label>
+                <textarea name="" id="" rows="10" placeholder="Teile mir dein Feedback mit..." required></textarea>
+
+                <div class="button-group">
+                    <button type="submit" id="send-btn">Senden</button>
+                    <button type="button" id="decline-btn" (click)="closeModal()">Abbrechen</button>
+                </div>
+            </form>
+        </div>
+    </dialog>
+}
